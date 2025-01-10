@@ -1,6 +1,6 @@
 num1 = float(input("Enter your number: "))
 num2 = float(input("Enter your second number: "))
-operator =input("Enter + to add, - to subtract ,x to multiply, / to divide,xx for power(22 for Square root and 33 for cube root) and // for remainder: ")
+operator =input("Enter + to add, - to subtract ,x to multiply, / to divide,xx for power(22 for Square root and 33 for cube root) and // for remainder and pi for circumfrience: ")
 def add(a,b):
     return a+b
 def subtract(a,b):
@@ -13,6 +13,8 @@ def power(a,b):
     return a**b
 def remainder(a,b):
     return a%b
+def circle(a):
+    return 2*(22/7)*a
 
 
 
@@ -32,6 +34,8 @@ elif operator == "22":
     ans = power(num1,0.5)
 elif operator == "33":
     ans = power(num1,(1/3))
+elif operator == "pi":
+    ans = circle(num1)
 
 
 print(ans)
